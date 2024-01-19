@@ -1,0 +1,61 @@
+
+body{
+    background-image:url(Images/background.jpg); 
+    background-attachment: fixed;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center
+}
+main{
+    background-color:rgba(128, 128, 128, 0.313);
+    width:80%;
+}
+table {
+    width: 70%;
+    margin-left: 15%;
+    box-shadow:0 5px 20px rgba(0, 0, 0, 0.705);
+    border: 1px solid black;
+  }
+  
+  table tr {
+    padding: 70px;
+  }
+  
+  thead tr {
+    background-color:green;
+    height: 50px;
+  }
+  
+  tbody tr {
+    color:white;
+  }
+  tfoot tr{
+    background-color: rgba(87, 141, 7, 0.616);
+    color: rgb(249, 249, 249);
+    text-transform: uppercase;
+  }
+  
+  tfoot td{
+      text-align: center;
+  }
+  tbody tr:nth-child(even) {
+    background-color: rgba(87, 141, 7, 0.616);
+  }
+  
+  tbody{
+    height: 90px;
+  }
+  tbody td {
+    height: 90px;
+    
+  }
+  
+  table td img {
+    width: 250px;
+    height: 200px;
+    border-radius: 1rem;
+  }
+
+
+
+ 
