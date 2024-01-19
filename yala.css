@@ -167,6 +167,31 @@ nav ul li .dropdown li a:hover{
     font-size: larger;
     color: wheat;
   }
+  @media only screen and (max-width: 768px) {
+   /* Adjust styles for tablets */ 
+    .overlay-text {
+      font-size: 50px; 
+    }
+    .yala-intro h1 {
+      font-size: 30px; 
+    }
+    .yala-intro p {
+      font-size: medium; 
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    /* Adjust styles for mobile devices */
+    .overlay-text {
+      font-size: 30px; 
+    }
+    .yala-intro h1 {
+      font-size: 25px; 
+    }
+    .yala-intro p {
+      font-size: small; 
+    }
+  }
   /***********************Animals in yala***********************/
   .yala-ani{
     width: 80%;
@@ -194,7 +219,25 @@ nav ul li .dropdown li a:hover{
     font-size: larger;
     color: wheat;
     }
+  @media only screen and (max-width: 768px) {
+    /* Adjust styles for tablets */
+    .yala-ani h1 {
+      font-size: 30px; 
+    }
+    .yala-ani p {
+      font-size: medium; 
+    }
+  }
   
+  @media only screen and (max-width: 576px) {
+    /* Adjust styles for mobile devices */
+    .yala-ani h1 {
+      font-size: 25px; 
+    }
+    .yala-ani p {
+      font-size: small; 
+    }
+  }
     
   /************Images of the section*********************/
   .container{
@@ -379,3 +422,89 @@ footer{
   .bottom-bar p{
     color: #fff;
   }
+
+
+
+  @media only screen and (max-width: 768px) {
+      /* Adjust styles for tablets and smaller devices */
+      header {
+          padding: 0.1px 5%;
+      }
+  
+      .logo {
+          width: 80px;
+          height: 96px;
+          margin-top: 0;
+      }
+  
+      nav ul {
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      nav li {
+          margin: 5px 0;
+      }
+  
+      .image-container {
+          height: 500px;
+      }
+  
+      .overlay-text {
+          font-size: 50px;
+      }
+  
+      .yala-intro h1,
+      .yala-ani h1,
+      .Conservation h1 {
+          font-size: 30px;
+      }
+  
+      .yala-intro p,
+      .yala-ani p,
+      .Conservation p {
+          font-size: medium;
+      }
+  
+      .container {
+          flex-direction: column;
+          width: 100%;
+      }
+  
+      .card {
+          width: 90%;
+      }
+  }
+  @media only screen and (max-width: 768px) {
+    /* Adjust styles for tablets */
+    .container {
+      height: auto; 
+      padding: 10px 0; 
+    }
+    .frame,
+    .center {
+      width: auto; 
+      height: auto; 
+      margin-left: 0; 
+      margin-top: 0; 
+    }
+    .card {
+      width: 80%; 
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    /* Adjust styles for mobile devices */
+    .container {
+      padding: 5px 0; 
+    }
+    .frame,
+    .center {
+      transform: none; 
+    }
+    .card {
+      width: 90%; 
+    }
+  }
+  
+ 

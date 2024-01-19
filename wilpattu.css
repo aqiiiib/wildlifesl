@@ -277,3 +277,85 @@ footer{
   .bottom-bar p{
     color: #fff;
   }
+
+ @media only screen and (max-width: 768px) {
+   /* Adjust styles for tablets */
+   header {
+     padding: 0.1px 10%; 
+   }
+   .logo {
+     width: 80px; 
+     height: 100px; 
+     margin-top: -20px; 
+   }
+   nav li {
+     margin: 0 10px; 
+   }
+   nav a {
+     font-size: medium; 
+   }
+   .image-container {
+     height: 500px; 
+   }
+   .overlay-text {
+     font-size: 70px; 
+   }
+   .wilpattu-intro h1,
+   .wilpattu-ani h1,
+   .Conservation h1 {
+     font-size: 35px;
+   }
+   .wilpattu-intro p,
+   .wilpattu-ani p,
+   .Conservation p {
+     font-size: medium; 
+   }
+   .card {
+     width: 250px;
+     height: 150px; 
+   }
+   .social-icons a i {
+     font-size: 1.5em; 
+   }
+ }
+ 
+ @media only screen and (max-width: 576px) {
+   /* Adjust styles for mobile devices */
+   header {
+     padding: 0.1px 5%; 
+   }
+   .logo {
+     width: 60px; 
+     height: 80px; 
+     margin-top: -10px; 
+   }
+   nav li {
+     margin: 0 5px;
+   }
+   nav a {
+     font-size: small; 
+   }
+   .image-container {
+     height: 300px; 
+   }
+   .overlay-text {
+     font-size: 50px; 
+   }
+   .wilpattu-intro h1,
+   .wilpattu-ani h1,
+   .Conservation h1 {
+     font-size: 25px; 
+   }
+   .wilpattu-intro p,
+   .wilpattu-ani p,
+   .Conservation p {
+     font-size: small; 
+   }
+   .card {
+     width: 200px; 
+     height: 120px;
+   }
+   .social-icons a i {
+     font-size: 1em; 
+   }
+ }
