@@ -90,7 +90,7 @@ nav ul li .dropdown li a:hover{
   display: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   nav ul {
     display:none;
     flex-direction: column;
@@ -175,7 +175,6 @@ nav ul li .dropdown li a:hover{
     display:grid;
     justify-content:end;
     align-items:end;
-    text-align: end;
     position: absolute;
     margin-top: 10%;
     margin-left: -110%;

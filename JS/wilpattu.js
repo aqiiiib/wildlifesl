@@ -10,20 +10,20 @@ function ADDCONTENT(value, id) {
     }
 }
 
-fetch('wilpattu.json')
-  .then(response => response.json()) 
-  .then(data => {
+// fetch('wilpattu.json')
+//   .then(response => response.json()) 
+//   .then(data => {
     
-    if (!localStorage.getItem("Wilpattu")) {  
-      localStorage.setItem('Wilpattu', JSON.stringify(data));
-      }
+//     if (!localStorage.getItem("wilpattu")) {  
+//       localStorage.setItem('wilpattu', JSON.stringify(data));
+//       }
 
     
-  })
-    .catch(error => {
-        console.error('Error fetching data:', error);
-      });
-    let  indexData = JSON.parse(localStorage.getItem("Wilpattu"));
+//   })
+//     .catch(error => {
+//         console.error('Error fetching data:', error);
+//       });
+    let  indexData = JSON.parse(localStorage.getItem("wilpattu"));
     ADDCONTENT(indexData.sections_wilpattu[0].title,"wilpattu-discover-title");
     ADDCONTENT(indexData.sections_wilpattu[0].content,"wilpattu-discover-description");
 
@@ -37,23 +37,26 @@ fetch('wilpattu.json')
     ADDCONTENT(indexData.sections_wilpattu[2].content_2,"wilpattu-conservation-description-2");
 
     
-   if (localStorage.getItem("login")) {
-        const getPopup = `<a onclick="openPopup()">📝Edit</a>`;
-        document.getElementById("editor").insertAdjacentHTML("beforeend", getPopup);
-    }
-    function openPopup() {
-      window.open("editor.html", "", "width=800px, height=410px");
+    if (localStorage.getItem("login")) {
+        const  userInfo = JSON.parse(localStorage.getItem("login"));
+        if  (userInfo == "admin"){
+          const getPopup = `<a onclick="openPopup()">📝Edit</a>`;
+          document.getElementById("editor").insertAdjacentHTML("beforeend", getPopup);
+          function openPopup() {
+          window.open("editor.html", "", "width=800px, height=410px");
+         }
+        }
   }
   if(localStorage.getItem("login")){
-     const  loginUser = `<li><a onclick="removeuser()">Logout</a></li>`;
-     document.getElementById("login").insertAdjacentHTML("beforeend", loginUser);
-  }
-  else{
-    const  loginUser = `<li><a href="login.html">Login</a></li>`;
+    const  loginUser = `<li><a onclick="removeuser()">Logout</a></li>`;
     document.getElementById("login").insertAdjacentHTML("beforeend", loginUser);
+ }
+ else{
+   const  loginUser = `<li><a href="login.html">Login</a></li>`;
+   document.getElementById("login").insertAdjacentHTML("beforeend", loginUser);
 
-  }
-  function removeuser() {
-    localStorage.removeItem('login');
-    location.reload();
+ }
+ function removeuser() {
+   localStorage.removeItem('login');
+   location.reload();
 }

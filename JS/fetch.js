@@ -1,10 +1,10 @@
 // Array of file names
 const fileNames = [
     "data.json",
-    "intro.json",
+    "Intro.json",
     "conservation.json",
     "leopard.json",
-    "Animal.json",
+    "animal.json",
     "wilpattu.json",
     "Yala.json",
     "Users.json"

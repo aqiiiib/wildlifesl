@@ -10,18 +10,18 @@ function ADDCONTENT(value, id) {
     }
 }
 
-fetch('intro.json')
-  .then(response => response.json()) 
-  .then(data => {
-    if (!localStorage.getItem("Intro")) {  
-    localStorage.setItem('Intro', JSON.stringify(data));
-    }
+// fetch('intro.json')
+//   .then(response => response.json()) 
+//   .then(data => {
+//     if (!localStorage.getItem("Intro")) {  
+//     localStorage.setItem('Intro', JSON.stringify(data));
+//     }
 
 
-  })
-    .catch(error => {
-        console.error('Error fetching data:', error);
-      });
+//   })
+//     .catch(error => {
+//         console.error('Error fetching data:', error);
+//       });
 
       let  indexData = JSON.parse(localStorage.getItem("Intro"));
 
@@ -39,23 +39,26 @@ fetch('intro.json')
     ADDCONTENT(indexData.sections_intro[1].content[2].title,"knuckles-range");
     ADDCONTENT(indexData.sections_intro[1].content[2].content,"knuckles-description");
 
-   if (localStorage.getItem("login")) {
+    if (localStorage.getItem("login")) {
+      const  userInfo = JSON.parse(localStorage.getItem("login"));
+      if  (userInfo == "admin"){
         const getPopup = `<a onclick="openPopup()">📝Edit</a>`;
         document.getElementById("editor").insertAdjacentHTML("beforeend", getPopup);
-    }
-    function openPopup() {
-      window.open("editor.html", "", "width=800px, height=410px");
-  }
-  if(localStorage.getItem("login")){
-    const  loginUser = `<li><a onclick="removeuser()">Logout</a></li>`;
-    document.getElementById("login").insertAdjacentHTML("beforeend", loginUser);
- }
- else{
-   const  loginUser = `<li><a href="login.html">Login</a></li>`;
-   document.getElementById("login").insertAdjacentHTML("beforeend", loginUser);
+        function openPopup() {
+        window.open("editor.html", "", "width=800px, height=410px");
+       }
+      }
+}
+if(localStorage.getItem("login")){
+  const  loginUser = `<li><a onclick="removeuser()">Logout</a></li>`;
+  document.getElementById("login").insertAdjacentHTML("beforeend", loginUser);
+}
+else{
+ const  loginUser = `<li><a href="login.html">Login</a></li>`;
+ document.getElementById("login").insertAdjacentHTML("beforeend", loginUser);
 
- }
- function removeuser() {
-   localStorage.removeItem('login');
-   location.reload();
+}
+function removeuser() {
+ localStorage.removeItem('login');
+ location.reload();
 }

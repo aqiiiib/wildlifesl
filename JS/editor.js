@@ -1,11 +1,11 @@
 // Map page names to local storage keys
 const pageLocalStorageKeys = {
-  Home: "index",
+  Home: "data",
   intro: "Intro",
-  department: "Department",
+  department: "conservation",
   leopard: "leopard",
   animal: "animal",
-  wilpattu: "Wilpattu",
+  wilpattu: "wilpattu",
   yala: "Yala"
 };
 

@@ -11,19 +11,19 @@ function ADDCONTENT(value, id) {
 }
 
 
-  fetch('data.json')
-  .then(response =>response.json())
-  .then((indexData )=> {
-    if (!localStorage.getItem("index")) {
-      localStorage.setItem("index", JSON.stringify(indexData))
+  // fetch('data.json')
+  // .then(response =>response.json())
+  // .then((indexData )=> {
+  //   if (!localStorage.getItem("data")) {
+  //     localStorage.setItem("data", JSON.stringify(indexData))
 
-    }
-    })
-      .catch(error => {
-          console.error('Error fetching Data:', error);
-        });
+  //   }
+  //   })
+  //     .catch(error => {
+  //         console.error('Error fetching Data:', error);
+  //       });
    
-        const indexData = JSON.parse(localStorage.getItem("index"));
+        const indexData = JSON.parse(localStorage.getItem("data"));
 
         
         ADDCONTENT(indexData.sections_index[0].title,"giants-title");

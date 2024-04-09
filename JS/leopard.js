@@ -10,16 +10,16 @@ function ADDCONTENT(value, id) {
     }
 }
 
-fetch('leopard.json')
-  .then(response => response.json()) 
-  .then(data => {
-    if (!localStorage.getItem("leopard")) {
-      localStorage.setItem('leopard', JSON.stringify(data));
-    }
-  })
-    .catch(error => {
-        console.error('Error fetching data:', error);
-      });
+// fetch('leopard.json')
+//   .then(response => response.json()) 
+//   .then(data => {
+//     if (!localStorage.getItem("leopard")) {
+//       localStorage.setItem('leopard', JSON.stringify(data));
+//     }
+//   })
+//     .catch(error => {
+//         console.error('Error fetching data:', error);
+//       });
       let  indexData = JSON.parse(localStorage.getItem("leopard"));
        ADDCONTENT(indexData.sections_leopard[0].content,"leopard-description");
 
@@ -60,16 +60,16 @@ fetch('leopard.json')
        }
       }
 }
-  if(localStorage.getItem("login")){
-    const  loginUser = `<li><a onclick="removeuser()">Logout</a></li>`;
-    document.getElementById("login").insertAdjacentHTML("beforeend", loginUser);
- }
- else{
-   const  loginUser = `<li><a href="login.html">Login</a></li>`;
-   document.getElementById("login").insertAdjacentHTML("beforeend", loginUser);
+if(localStorage.getItem("login")){
+  const  loginUser = `<li><a onclick="removeuser()">Logout</a></li>`;
+  document.getElementById("login").insertAdjacentHTML("beforeend", loginUser);
+}
+else{
+ const  loginUser = `<li><a href="login.html">Login</a></li>`;
+ document.getElementById("login").insertAdjacentHTML("beforeend", loginUser);
 
- }
- function removeuser() {
-   localStorage.removeItem('login');
-   location.reload();
+}
+function removeuser() {
+ localStorage.removeItem('login');
+ location.reload();
 }

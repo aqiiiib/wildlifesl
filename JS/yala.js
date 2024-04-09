@@ -10,17 +10,17 @@ function ADDCONTENT(value, id) {
     }
 }
 
-fetch('Yala.json')
-  .then(response => response.json()) 
-  .then(data => {
-    if (!localStorage.getItem("Yala")) {
-      localStorage.setItem('Yala', JSON.stringify(data));
-    }
+// fetch('Yala.json')
+//   .then(response => response.json()) 
+//   .then(data => {
+//     if (!localStorage.getItem("Yala")) {
+//       localStorage.setItem('Yala', JSON.stringify(data));
+//     }
     
-  })
-    .catch(error => {
-        console.error('Error fetching data:', error);
-      });
+//   })
+//     .catch(error => {
+//         console.error('Error fetching data:', error);
+//       });
 
       let  indexData = JSON.parse(localStorage.getItem("Yala"));
       ADDCONTENT(indexData.sections_yala[0].title,"discover-title");
@@ -36,12 +36,15 @@ fetch('Yala.json')
       ADDCONTENT(indexData.sections_yala[2].content_1,"conservation-description-1");
       ADDCONTENT(indexData.sections_yala[2].content_2,"conservation-description-2");
 
-   if (localStorage.getItem("login")) {
-        const getPopup = `<a onclick="openPopup()">📝Edit</a>`;
-        document.getElementById("editor").insertAdjacentHTML("beforeend", getPopup);
-    }
-    function openPopup() {
-      window.open("editor.html", "", "width=800px, height=410px");
+      if (localStorage.getItem("login")) {
+        const  userInfo = JSON.parse(localStorage.getItem("login"));
+        if  (userInfo == "admin"){
+          const getPopup = `<a onclick="openPopup()">📝Edit</a>`;
+          document.getElementById("editor").insertAdjacentHTML("beforeend", getPopup);
+          function openPopup() {
+          window.open("editor.html", "", "width=800px, height=410px");
+         }
+        }
   }
   if(localStorage.getItem("login")){
     const  loginUser = `<li><a onclick="removeuser()">Logout</a></li>`;

@@ -16,18 +16,40 @@ body{
 .menu-btn {
   display: none;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   nav ul {
     display:none;
     flex-direction: column;
     position: absolute;
     top: 60px;
     left: 100%;
-    background-color: #f9f9f9;
+    background-color: #ffffff00;
     width: 100%;
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
+  nav ul li .dropdown {
+    display:grid;
+    justify-content:end;
+    align-items:end;
+    text-align: end;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: -50%;
+}
+nav ul li .dropdown li{
+    display: none;
+    position: relative;
+    margin-left: -30px;
+    padding: 5px;
+}
+nav ul li:hover .dropdown li {
+    position:relative;
+    display:flex;
+  }
+nav ul li .dropdown li a:hover{
+    color:#B57F0C;
+} 
   .show {
     display:grid;
     flex-direction: column;
@@ -46,28 +68,7 @@ body{
   .nav ul li {
     margin: 10px 0;
   }
-  nav ul li .dropdown {
-    display:grid;
-    justify-content:end;
-    align-items:end;
-    text-align: end;
-    position: absolute;
-    margin-top: 10%;
-    margin-left: -110%;
-}
-nav ul li .dropdown li{
-    display: none;
-    position: relative;
-    margin-left: -30px;
-    padding: 5px;
-}
-nav ul li:hover .dropdown li {
-    position:relative;
-    display:flex;
-  }
-nav ul li .dropdown li a:hover{
-    color:#B57F0C;
-} 
+
   .menu-btn {
     display: flex;
     margin-left: 90%;
@@ -100,10 +101,9 @@ nav ul li .dropdown li a:hover{
     display:grid;
     justify-content:end;
     align-items:end;
-    text-align: end;
     position: absolute;
     margin-top: 10%;
-    margin-left: -110%;
+     margin-left: -50%;
 }
 nav ul li .dropdown li{
     display: none;
