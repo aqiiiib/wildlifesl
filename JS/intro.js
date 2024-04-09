@@ -24,7 +24,7 @@ function ADDCONTENT(value, id) {
 //         console.error('Error fetching data:', error);
 //       });
 
-      let  indexData = JSON.parse(localStorage.getItem("Intro"));
+      let  indexData = JSON.parse(localStorage.getItem("intro"));
 
       
     ADDCONTENT(indexData.sections_intro[0].title,"wildlife-locations");
