@@ -8,7 +8,8 @@ function ADDCONTENT(value, id) {
     } else {
         console.error(`Element with ID '${id}' not found.`);
     }
-}
+} 
+
 
 // fetch('intro.json')
 //   .then(response => response.json()) 
