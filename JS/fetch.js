@@ -1,7 +1,7 @@
 // Array of file names
 const fileNames = [
     "data.json",
-    "Intro.json",
+    "intro.json",
     "conservation.json",
     "leopard.json",
     "animal.json",
@@ -9,7 +9,9 @@ const fileNames = [
     "Yala.json",
     "Users.json"
   ];
+   
   
+
   // Check if localStorage length is less than 7
   if (localStorage.length < 7) {
     console.log("this code runs");
