@@ -1,0 +1,267 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background: #C9C9C9;
+	color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+	background-image: url(Images/login_image.jpg);
+}
+a{
+	text-decoration: none;
+}
+header{ /* Position and display header as a flex container */
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.1px 20%;
+    background:rgba(255, 255, 255, 0.409);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+
+.logo {
+    width: 100px;
+    height:120px;
+    margin-top: -35px;
+
+}
+  /* Style for the navigation menu */
+nav {
+    display: flex;
+    margin-top: 10px;
+}
+/* Style for the unordered list of links */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:inline-flex;
+}
+
+nav li {/* Style for each list item */
+    margin: 0 20px;
+}
+nav a { /* Style for each link */
+    text-decoration: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000000;
+    font-weight: bold;
+    font-size:larger;
+    position: relative;
+}
+nav ul li a::before {  /* Add a line below each link */
+    content: "";
+    position: absolute;
+    height: .3rem;
+    border-block: 1px solid #227501;
+    bottom:-10px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin:center;
+    transition: 0.5s ease;
+  }
+nav ul li a:hover{
+   color:#B57F0C;  /* Change color of link on hover */
+  }
+nav a:is(:hover, :focus)::before { 
+    transform: scaleX(1);  /* Add line below link on hover */
+  }
+ 
+nav ul li .dropdown {
+    display:grid;
+    justify-content:space-between;
+    align-items: center;
+    list-style-type: none;
+    position: absolute;
+    margin-top: 0%;
+}
+ /* Style for each dropdown item */
+nav ul li .dropdown li{
+    display: none;
+    position: relative;
+    margin-left: -30px;
+    padding: 5px;
+}
+nav ul li:hover .dropdown li {  /* Display dropdown items on hover */
+    position:relative;
+    display:flex;
+  }
+nav ul li .dropdown li a:hover{
+    color:#B57F0C; /* Change color of dropdown item on hover */
+} 
+.active{
+  color:rgb(3, 123, 17);
+}
+#wrapper {
+	width: 430px;
+	height: 400px;
+	background: url(https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/RGOP31CS3I.jpg);
+	border-radius: 30px;
+	margin: 25px auto;
+	padding: 64px;
+	margin-top: 100px;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+	box-shadow: 0px 15px 20px 0px rgba(128, 128, 128, 0.76);
+}
+
+#wrapper:before {
+	content: "";
+	border-radius: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .64);
+	z-index: -1;
+}
+
+#table {
+	margin-bottom: 10em;
+}
+
+#table a {
+	text-transform: uppercase;
+	padding: 11px 4px;
+    padding-left: 120px;
+	color: #bbb;
+    font-size:x-large;
+
+}
+
+#table a.active {
+	border-bottom: 1.5px solid #1061EE;
+	color: #fff;
+}
+
+label {
+	display: block
+}
+
+form {
+	margin-bottom: 3.3em;
+}
+
+.form-group {
+	position: relative;
+	margin-bottom: 16px;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 6px;
+	font-size: 14px;
+	margin-left: 14px;
+	color: #bbb;
+}
+
+input {
+	width: 100%;
+	background: rgba(0, 0, 0, 0.42);
+	outline: none;
+	padding: 10px 14px;
+	color: #fff;
+	border: none;
+	border-radius: 36px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	transition: background 0.5s ease-in-out;
+}
+span#showpwd {
+    position: absolute;
+    top: 32px;
+    right: 16px;
+    cursor: pointer;
+}
+input:focus {
+	background: rgba(0, 0, 0, 0.6);
+}
+
+input[type="submit"] {
+	background: #1061EE;
+	margin-top: 14px;
+	cursor: pointer;
+}
+
+#checkbox {
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px
+}
+
+#checkbox input+.text:before {
+	content: "\f096";
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	margin-right: 6px;
+	width: 1em;
+}
+
+#checkbox input:checked+.text:before {
+	content: "\f14a";
+	color: #1061ee;
+	animation: scalecheck 0.1s
+}
+
+#checkbox input {
+	display: none;
+}
+
+@keyframes scalecheck {
+	0% {
+		transform: scale(0);
+	}
+	90% {
+		transform: scale(1.4);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.hr {
+	height: 1.4px;
+	background: rgba(128, 128, 128, 0.51);
+	border-radius: 17px;
+	margin-bottom: 33px;
+}
+
+#froget-pass {
+	text-align: center;
+	color: #bbb;
+	margin: 0;
+	display: block;
+}
+
+@media screen and (max-width :490px) {
+	body {
+		display: table;
+		width: 100%;
+	}
+	#wrapper {
+		width: auto;
+		height: 100vh;
+		margin: 0;
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+@media screen and (max-width :490px) {
+	#wrapper {
+		padding: 28px;
+	}
+}

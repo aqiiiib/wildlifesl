@@ -6,12 +6,121 @@
 }
 
 body{
-  background-image:url(Images/willpattu_bg.jpg);
+ background-image:url(Images/willpattu_bg.jpg);
  width: 100%;
  background-attachment: fixed;
  background-size: cover; 
  background-repeat: no-repeat;
  background-position: center center;
+}
+.menu-btn {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  nav ul {
+    display:none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 100%;
+    background-color: #f9f9f9;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .show {
+    display:grid;
+    flex-direction: column;
+    justify-content:end;
+    align-items:end;
+    text-align: end;
+    position: absolute;
+    top: 95px;
+    font-size: large;
+    left: -4%;
+    background-color: #f9f9f981;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .nav ul li {
+    margin: 10px 0;
+  }
+  nav ul li .dropdown {
+    display:grid;
+    justify-content:end;
+    align-items:end;
+    text-align: end;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: -110%;
+}
+nav ul li .dropdown li{
+    display: none;
+    position: relative;
+    margin-left: -30px;
+    padding: 5px;
+}
+nav ul li:hover .dropdown li {
+    position:relative;
+    display:flex;
+  }
+nav ul li .dropdown li a:hover{
+    color:#B57F0C;
+} 
+  .menu-btn {
+    display: flex;
+    margin-left: 90%;
+    cursor: pointer;
+    font-size: 50px;
+    color: #4a4a4a;
+    margin-top: -0px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+.menu-btn:hover {
+  background-color: #faf600;
+}
+  .active{
+    color:rgb(3, 123, 17);
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu-btn {
+    display: flex;
+    margin-left: 90%;
+    cursor: pointer;
+    font-size: 50px;
+    color: #4a4a4a;
+    margin-top: -90px;
+    border-radius: 5px;
+  }
+  nav ul li .dropdown {
+    display:grid;
+    justify-content:end;
+    align-items:end;
+    text-align: end;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: -110%;
+}
+nav ul li .dropdown li{
+    display: none;
+    position: relative;
+    margin-left: -30px;
+    padding: 5px;
+}
+nav ul li:hover .dropdown li {
+    position:relative;
+    display:flex;
+  }
+nav ul li .dropdown li a:hover{
+    color:#B57F0C;
+} 
+  .active{
+    color:rgb(3, 123, 17);
+  }
 }
 main{
   backdrop-filter: blur(5px);
@@ -359,3 +468,38 @@ footer{
      font-size: 1em; 
    }
  }
+ input[type="email"] {
+  display: inline-block;
+  width: 20%;
+  padding: 18px 36px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  height: 40px;
+  margin-top: 18px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.06);
+}
+.news {
+  padding: 4.8px 0 9.6px 0;
+  text-align: center;
+}
+#News{
+  text-align: center;
+  font-family: serif;
+  letter-spacing: 7px;
+  font-weight: normal;
+  margin-top:30px;
+}
+.bt{
+
+font-size: 16px;
+display: inline-block;
+font-weight: 600;
+padding: 10px 32px;
+border-radius: 30px;
+cursor: pointer;
+background-color: #48b774;
+color: #fff;
+}

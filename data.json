@@ -1,0 +1,22 @@
+{
+ "Title_1": "Home", 
+ "sections_index": [
+    {
+        "title": "Giants of the Jungle",
+        "content_1": "One of the most recognizable and revered representations of Sri Lanka's wildlife is its elephant population. The largest of the Asian elephant subspecies, the Sri Lankan elephant, inhabits Sri Lanka, which has the highest density of elephants in the continent.",
+        "content_2":  "These magnificent animals serve as both a cultural icon and a vital component of the nation's ecology.",
+        "content_3": "Elephants in Sri Lanka roam freely in national parks and other protected places, providing both residents and tourists with an amazing spectacle. These gentle giants have appropriate habitats in the open landscapes and rich foliage of these places, which enable them to engage in activities like socializing, bathing, and foraging."
+    },
+     {
+        "title": "Apex Predators",
+        "content_1": "The Sri Lankan leopard, an intriguing and secretive subspecies, has a distinct position in Sri Lanka's rich wildlife tapestry. The Sri Lankan leopard, as the largest Asian subspecies, contributes to the ecological balance of the island's different ecosystems. However, as an endangered species, it confronts significant hurdles, making conservation efforts critical to its future.",
+        "content_2": " These leopards, which are distinguished by rosettes and dark markings on their golden coats, are essential to preserving the  integrity of Sri Lanka's ecosystems. As predators, they support the general equilibrium of the food chain by controlling the populations of prey species.",
+        "content_3":" The Sri Lankan leopard is a symbol of the wild and untamed parts of the nation's natural heritage because of its elusiveness, which lends a sense of mystery to the surrounding area. The main goals of conservation efforts are to safeguard the ecosystems that are vital to these leopards, deal with conflicts between people and wildlife, and increase public understanding of the value of conserving this endangered species."
+    },
+     {
+        "title": "Jewel of the Rainforest",
+        "content": "Marvel at the vibrant colors of the Sri Lankan peacock, a symbol of beauty and prosperity. Listen to their melodic calls and witness their spectacular courtship displays."
+     }
+  ]
+}   
+    

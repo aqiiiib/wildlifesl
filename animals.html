@@ -9,10 +9,15 @@
 <link rel="icon" type="image/png" sizes="32x32" href="Images/logo.png">
 <link rel="icon" type="image/png" sizes="16x16" href="Images/logo.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
+</head>
   <body>
     <header>
       <a href="index.html"><img src="images/logo.png" class="logo"></a>
+      <button class="menu-btn">&#9776;</button>
+      <script>document.querySelector('.menu-btn').addEventListener('click', () => {
+        document.querySelector('nav ul').classList.toggle('show');
+      });
+      </script>
       <nav>
         <ul>
          <li><a  href="index.html">Home</a></li>
@@ -25,31 +30,33 @@
           <li><a href="wilpattu.html">Wilpattu National Park</a></li>
          </ul>
         </li>
+        <li><a id="login" style= cursor:pointer></a></li>
+      <li><a id="editor" style= cursor:pointer></a></li>
       </ul>
       </nav>
     </header>
     <main>
-      <div class="indi-heading">
-      <h1>Indigenous animals in Sri Lanka</h1>
-    </div>
-    <div class="indi-intro">
-    <p> Sri Lanka, a tropical paradise nestled in the Indian Ocean, boasts a rich and diverse array of indigenous animals that thrive in its varied ecosystems. From the lush rainforests to the arid plains, these creatures contribute to the island's unique biodiversity. Here's a glimpse into the fascinating world of Sri Lanka's native wildlife.</p>
-  </div>
-  <div class="indi-gallery">
-    <h2>Animal Gallery</h2>
-  </div>
-      <div class="ani-container">
-        <div class="ani-box">
-          <div class="ani-imgBx">
-            <img src="Images/ani_leop.jpg">
-          </div>
-          <div class="ani-content">
-            <div>
-              <h2>Sri Lankan Leopard</h2>
-              <p>The Sri Lankan leopard, a subspecies unique to the island, graces the landscapes of Yala and Wilpattu National Parks. Known for its elusive nature, it symbolizes the importance of conservation efforts.
-              </p>
-            </div>
-          </div>
+      <section>
+      <div class="indi-heading" id="indi-heading">
+        <h1 id="indi-title"></h1>
+       </div>
+       <div class="indi-intro" id="indi-intro">
+        <p id="indi-description"></p>
+       </div>
+       <div class="indi-gallery" id="indi-gallery">
+        <h2 id="gallery-title"></h2>
+       </div>
+       <div class="ani-container" id="ani-container-1">
+        <div class="ani-box" id="ani-box-1">
+           <div class="ani-imgBx" id="ani-imgBx-1">
+             <img src="Images/ani_leop.jpg" id="ani-img-1">
+           </div>
+           <div class="ani-content" id="ani-content-1">
+             <div>
+               <h2 id="ani-title-1"></h2>
+               <p id="ani-description-1"></p>
+             </div>
+           </div>
         </div>
         <div class="ani-box">
           <div class="ani-imgBx">
@@ -57,8 +64,8 @@
           </div>
           <div class="ani-content">
             <div>
-              <h2>Sloth Bear </h2>
-              <p>The sloth bear, a nocturnal inhabitant of Sri Lanka's dry zones, adds to the country's mammalian diversity. Its shaggy coat and distinctive behavior make it a noteworthy presence in the wild.
+              <h2 id="ani-title-sloth-bear"></h2>
+              <p id="ani-description-sloth-bear">
               </p>
             </div>
           </div>
@@ -69,25 +76,24 @@
           </div>
           <div class="ani-content">
             <div>
-              <h2>Spotted Deer</h2>
-              <p>Spotted deer, or axis deer, are commonly found in various habitats across Sri Lanka. Their striking appearance and role as prey species contribute to the intricate web of the island's ecosystems.
-              </p>
+              <h2 id="ani-title-spotted-deer"></h2>
+         <p id="ani-description-spotted-deer">
+        </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="ani-container">
-        <div class="ani-box">
-          <div class="ani-imgBx">
-            <img src="Images/ani_ele.jpg">
-          </div>
-          <div class="ani-content">
-            <div>
-              <h2>Asian Elephant </h2>
-              <p>The majestic Asian elephant roams the forests of Sri Lanka, symbolizing both cultural and ecological significance. Protected areas like Yala and Wilpattu provide vital habitats for these gentle giants.
-              </p>
-            </div>
-          </div>
+      <div class="ani-container" id="ani-container-2">
+        <div class="ani-box" id="ani-box-2">
+           <div class="ani-imgBx" id="ani-imgBx-2">
+             <img src="Images/ani_ele.jpg" id="ani-img-2">
+           </div>
+           <div class="ani-content" id="ani-content-2">
+             <div>
+               <h2 id="ani-title-2"></h2>
+               <p id="ani-description-2"></p>
+             </div>
+           </div>
         </div>
         <div class="ani-box">
           <div class="ani-imgBx">
@@ -95,9 +101,9 @@
           </div>
           <div class="ani-content">
             <div>
-              <h2>Ceylon Spiny Mouse </h2>
-              <p>The Ceylon spiny mouse, endemic to Sri Lanka, is a small rodent species with distinctive spines along its back. Inhabiting various forested regions, this mouse contributes to the intricate balance of Sri Lanka's terrestrial ecosystems.
-              </p>
+              <h2 id="ani-title-ceylon-spiny-mouse"></h2>
+              <p id="ani-description-ceylon-spiny-mouse">
+             </p>
             </div>
           </div>
         </div>
@@ -107,42 +113,47 @@
           </div>
           <div class="ani-content">
             <div>
-              <h2>Purple-faced Langur </h2>
-              <p>Endemic to Sri Lanka, the purple-faced langur is a charismatic primate found in the island's montane forests. Its distinctive appearance and social behavior make it a captivating species.
+              <h2 id="ani-title-purple-faced-langur"></h2>
+              <p id="ani-description-purple-faced-langur">
               </p>
             </div>
           </div>
         </div>
       </div>
-      <h1 class=" hhh1">Explore the two of the country's prominent national parks</h1>
-      <div class="square">
-        <div class="card">
-          <div class="imgBx">
-             <img src="Images/yala.jpg">
+      </section>
+    <section>
+      <h1 class="hhh1" id="explore-parks-title">Explore the two of the country's prominent national parks</h1>
+      <div class="square" id="square-container">
+       <div class="card" id="card-yala">
+          <div class="imgBx" id="imgBx-yala">
+            <img src="Images/yala.jpg" id="img-yala">
           </div>
-          <div class="context">
-              <h2>Yala National Park</h2>
-              <p>
-                Discover the diverse wildlife and landscapes of Yala.
-              </p> 
-              <a href="yala.html"><button class="btn">READ MORE</button></a>
+          <div class="context" id="context-yala">
+            <h2 id="title-yala">Yala National Park</h2>
+            <p id="description-yala">Discover the diverse wildlife and landscapes of Yala.</p>
+            <a href="yala.html"><button class="btn" id="btn-yala">READ MORE</button></a>
           </div>
+       </div>
+       <div class="card" id="card-wilpattu">
+          <div class="imgBx" id="imgBx-wilpattu">
+            <img src="Images/will.jpg" id="img-wilpattu">
+          </div>
+          <div class="context" id="context-wilpattu">
+            <h2 id="title-wilpattu">Wilpattu National Park</h2>
+            <p id="description-wilpattu">Explore the untamed beauty of Wilpattu, the largest national park in Sri Lanka</p>
+            <a href="wilpattu.html"><button class="btn" id="btn-wilpattu">READ MORE</button></a>
+          </div>
+       </div>
       </div>
-      <div class="card">
-        <div class="imgBx">
-           <img src="Images/will.jpg">
-        </div>
-        <div class="context">
-            <h2>Wilpattu National Park</h2>
-            <p>
-              Explore the untamed beauty of Wilpattu, the largest national park in Sri Lanka
-            </p> 
-             <a href="wilpattu.html"><button class="btn">READ MORE</button></a>
-        </div>
-    </div>
-      </div> 
+    </section>
     </main>
     <footer>
+      <div class="news">
+        <h3 id="News">NewsLetter Subscription </h3>
+        <form action="#" method="post" id="subscribeForm">
+            <input type="email" id="email"   placeholder="ENTER EMAIL"  required/> 
+            <button id="submit"  type="submit-button" class="bt">SUBSCRIBE</button>
+        </div>
       <div class="footer-content">
           <div class="social-icons">
               <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -154,5 +165,8 @@
         <p>&copy; 2023 Wildlife in Sri Lanka. All rights reserved.</p>
       </div>
   </footer>
+  <script src="JS/animal.js" defer></script>
+  <script src="newsletter.js"></script>
+  <script src="JS/fetch.js"></script>
     </body>
 </html>

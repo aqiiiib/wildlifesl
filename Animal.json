@@ -1,0 +1,39 @@
+{
+     
+    "Title_5": "Animals",
+    "sections_animal": [{
+      "title": "Indigenous animals in Sri Lanka",
+      "content": "Sri Lanka, a tropical paradise nestled in the Indian Ocean, boasts a rich and diverse array of indigenous animals that thrive in its varied ecosystems. From the lush rainforests to the arid plains, these creatures contribute to the island's unique biodiversity. Here's a glimpse into the fascinating world of Sri Lanka's native wildlife."
+                     },
+                     {
+        "title": "Animal Gallery",
+        "animals": [
+          {
+            "title": "Sri Lankan Leopard",
+            "content": "The Sri Lankan leopard, a subspecies unique to the island, graces the landscapes of Yala and Wilpattu National Parks. Known for its elusive nature, it symbolizes the importance of conservation efforts."
+          },
+          {
+            "title": "Sloth Bear",
+            "content": "The sloth bear, a nocturnal inhabitant of Sri Lanka's dry zones, adds to the country's mammalian diversity. Its shaggy coat and distinctive behavior make it a noteworthy presence in the wild."             
+          },
+          {
+            "title": "Spotted Deer",
+            "content": "Spotted deer, or axis deer, are commonly found in various habitats across Sri Lanka. Their striking appearance and role as prey species contribute to the intricate web of the island's ecosystems."
+          },
+          {
+            "title": "Asian Elephant",
+            "content": "The majestic Asian elephant roams the forests of Sri Lanka, symbolizing both cultural and ecological significance. Protected areas like Yala and Wilpattu provide vital habitats for these gentle giants."
+          },
+          {
+            "title": "Ceylon Spiny Mouse",
+            "content": "The Ceylon spiny mouse, endemic to Sri Lanka, is a small rodent species with distinctive spines along its back. Inhabiting various forested regions, this mouse contributes to the intricate balance of Sri Lanka's terrestrial ecosystems."
+          },
+          {
+            "title": "Purple-faced Langur",
+            "content": "Endemic to Sri Lanka, the purple-faced langur is a charismatic primate found in the island's montane forests. Its distinctive appearance and social behavior make it a captivating species."         
+            }
+        ]
+      }
+    
+ ]
+}

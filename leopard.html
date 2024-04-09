@@ -9,12 +9,15 @@
 <link rel="icon" type="image/png" sizes="32x32" href="Images/logo.png">
 <link rel="icon" type="image/png" sizes="16x16" href="Images/logo.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
+</head>
   <body>
     <header>
       <a href="index.html"><img src="images/logo.png" class="logo"></a>
-      <input type="checkbox" id="menu">
-      <label id="menu">Menu</label>
+      <button class="menu-btn">&#9776;</button>
+      <script>document.querySelector('.menu-btn').addEventListener('click', () => {
+        document.querySelector('nav ul').classList.toggle('show');
+      });
+      </script>
 
       <nav>
         <ul>
@@ -28,6 +31,8 @@
           <li><a href="wilpattu.html">Wilpattu National Park</a></li>
          </ul>
         </li>
+        <li><a id="login" style= cursor:pointer></a></li>
+        <li><a id="editor" style= cursor:pointer></a></li>
       </ul>
       </nav>
     </header>
@@ -41,29 +46,30 @@
   <main>
     <section class="leo">
     <h1 class="hh1">Pride of the Island's Jungles</h1>
-    <p>The Sri Lankan leopard (Panthera pardus kotiya) stands as an emblem of both mystery and majesty within the island's rich biodiversity. Endemic to Sri Lanka, this subspecies of the leopard family commands attention with its distinctive features and unique behaviors. Sri Lankan leopard exhibits a robust and agile physique, adorned with a golden-yellow coat marked by dark rosettes and spots. Its appearance is well-suited to the diverse landscapes it inhabits, ranging from dense rainforests to open grasslands. With a strong, stocky build and keen senses, this big cat exudes an aura of both strength and stealth.The Sri Lankan leopard holds cultural significance, often symbolizing strength and grace. Its presence in folklore and traditional art highlights the deep connection between the people of Sri Lanka and the natural world.
-
-      As a flagship species for conservation, the Sri Lankan leopard embodies the importance of preserving the island's unique ecosystems. Understanding and safeguarding these magnificent creatures not only contributes to the conservation of biodiversity but also ensures that future generations can continue to marvel at the enduring beauty of this iconic species in the heart of Sri Lanka's jungles.</p>
+    <p id="leopard-description"></p>
   </section>
-    <section class="leop">
-      <h1>Where Can You Find Leopards</h1>
-      <div class="box-container">
-          <div class="box">
-            <img src="Images/yala_leo.jpg" alt="" class="img1">
-            <h3>Yala National Park</h3>
-            <p>The poaching of wildlife, especially leopards for their skins, bones, and other body parts, is a major threat to the species' continued existence. The trade in luxury goods, traditional medicine, and trophy hunting has resulted in the devastation of leopard populations throughout much of their territory.</p>
-          </div>
-   
-         <div class="box" >
-            <img src="images/horton_leo.jpg" alt="" class="img2">
-            <h3>Horton Plains </h3>
-            <p>Leopard survival and the ecological balance are under threat from the illegal wildlife trade. The natural balance of prey is upset, overcrowding occurs, biodiversity declines, human-animal conflicts arise, and there are less opportunities for ecotourism as a result of poaching for skins, bones, and body parts. Due to the trade's frequent connections to networks of organised crime, international collaboration is essential.</p>
+  <section class="leop" id="leopard-locations">
+    <h1 id="leopard-locations-title">Where Can You Find Leopards</h1>
+    <div class="box-container" id="box-container">
+         <div class="box" id="box-yala">
+           <img src="Images/yala_leo.jpg" alt="" class="img1" id="img-yala">
+           <h3 id="yala-title"></h3>
+           <p id="yala-description">
+           </p>
          </div>
    
-         <div class="box" >
-            <img src="images/wilpattu_leo.jpg" alt="" class="img3">
-            <h3>Wilapttu Antional Park</h3>
-            <p>Conservation activities are necessary because the illegal wildlife trade puts leopard numbers at risk. Law enforcement, anti-poaching units, transboundary projects, community-based conservation, legal frameworks, education, and scientific research are some of the strategies that have been strengthened. Protecting leopard populations and facilitating their unrestricted transnational mobility are the goals of these initiatives.</p>
+         <div class="box" id="box-horton">
+          <img src="images/horton_leo.jpg" alt="" class="img2" id="img-horton">
+          <h3 id="horton-title"></h3>
+          <p id="horton-description">
+          </p>
+       </div>
+   
+       <div class="box" id="box-wilpattu">
+        <img src="images/wilpattu_leo.jpg" alt="" class="img3" id="img-wilpattu">
+        <h3 id="wilpattu-title"></h3>
+        <p id="wilpattu-description">
+        </p>
          </div>
       </div>
   </section>
@@ -72,56 +78,63 @@
     <div class="threats_card">
         <img src="Images/conglict.jpg">
         <div class="threats_content">
-            <h3>Human WildLife Conflicts</h3>
-            <p> The coexistence of humans and Sri Lankan leopards has led to a significant rise in conflicts, primarily driven by the encroachment of human settlements into natural habitats. As populations grow, the demand for land and resources intensifies, bringing people and leopards into closer proximity. Notable issues contributing to human-wildlife conflict include livestock depredation and crop raiding, which result in economic losses for communities dependent on agriculture and livestock.</p> <br>
-        </div>
+          <h3 id="conflict-title"></h3>
+          <p id="conflict-description">
+          </p>
+      </div>
     </div>
 
-    <div class="threats_card1">
-      <div class="threats_content1">
-        <h3>Consequences</h3>
-        <p> The consequences of such conflicts are far-reaching. Economic losses, particularly for farmers facing crop damage and livestock depredation, exacerbate poverty in affected communities. Retributive killing of leopards, often in retaliation for attacks on domestic animals or perceived threats to human safety, poses a significant threat to the survival of the species. Additionally, the loss of leopards can disrupt the natural balance of ecosystems, leading to increased populations of prey species and potential ecological cascades.</p> <br>
+    <div class="threats_card1" id="threats-card1">
+      <div class="threats_content1" id="threats-content1">
+         <h3 id="consequences-title"></h3>
+         <p id="consequences-description">
+         </p>
       </div>
-      <img src="Images/conse.jpg" >
-    </div>
+      <img src="Images/conse.jpg" id="consequences-image">
+     </div>
   
-  <div class="threats_card">
-    <img src="Images/protect.jpg">
-    <div class="threats_content">
-        <h3>How We Protect</h3>
-        <p> Efforts to mitigate human-leopard conflict involve a combination of proactive measures and community engagement. Community awareness and education initiatives play a crucial role in informing local residents about leopard behavior, promoting coexistence strategies, and emphasizing the importance of these big cats in maintaining ecological balance. Implementing secure livestock enclosures, early warning systems, and compensation programs for affected farmers are practical measures to reduce conflicts and foster tolerance.</p> <br>
-    </div>
-</div>
+     <div class="threats_card" id="threats-card-protect">
+      <img src="Images/protect.jpg" id="protect-image">
+      <div class="threats_content" id="threats-content-protect">
+         <h3 id="protect-title"></h3>
+         <p id="protect-description">
+         </p>
+      </div>
+     </div>
 <a href="https://www.leopocon.org/"><button class="btn">MORE</button></a>
 </section>
-<section class="threats1">
-  <h1>Habitat Loss</h1>
-  <div class="habitat">
-                  
-    <div class="habitat_title">
-        <p>Habitat loss poses a severe threat to the survival of Sri Lankan leopards, primarily driven by human-induced activities such as deforestation, urbanization, and agricultural expansion. The increasing human population leads to the fragmentation and shrinking of natural habitats, restricting the available living space for leopards and impeding their ability to find suitable prey.</p>
-    </div>
-
+<section class="threats1" id="threats1-section">
+  <h1 id="habitat-loss-title"></h1>
+  <div class="habitat" id="habitat-loss-content">
+       <div class="habitat_title" id="habitat-loss-title-content">
+           <p id="habitat-loss-description">
+           </p>
+       </div>
 </div>
-  <h1>consequences</h1>
-  <div class="habitat1">
-                  
-    <div class="habitat_title">
-        <p>The consequences of habitat loss extend beyond the immediate impact on leopards, contributing to broader ecological imbalances. The fragmentation of habitats isolates leopard populations, reducing genetic diversity and increasing the risk of inbreeding. Additionally, habitat loss disrupts the natural balance of prey species, affecting leopard food sources and potentially leading to increased conflicts with humans as leopards search for alternative prey.</p>
+<h1 id="consequences-heading"></h1>
+<div class="habitat1" id="habitat1-section">
+    <div class="habitat_title" id="habitat1-title">
+        <p id="habitat1-description">
+        </p>
     </div>
-
 </div>
-  <h1>how we protect</h1>
-  <div class="habitat2">          
-    <div class="habitat_title">
-        <p>
-          In summary, protecting Sri Lankan leopard habitats involves a blend of conservation measures and community engagement. Key actions include establishing and maintaining protected areas, creating wildlife corridors to connect fragmented habitats, implementing community-based conservation initiatives, enforcing strict land-use planning regulations, and supporting reforestation programs. These collective efforts aim to mitigate habitat loss threats and promote a sustainable coexistence between humans and Sri Lankan leopards, safeguarding the future of this iconic species.</p>
+<h1 id="protection-heading"></h1>
+<div class="habitat2" id="habitat2-section">
+    <div class="habitat_title" id="habitat2-title">
+        <p id="habitat2-description">
+        </p>
     </div>
 </div>
 <a href="https://www.resplendentceylon.com/resplendentjournal/leopard-research-centre-yala/"><button class="btn">MORE</button></a>
 </section>
 </main>
 <footer>
+  <div class="news">
+    <h3 id="News">NewsLetter Subscription </h3>
+    <form action="#" method="post" id="subscribeForm">
+        <input type="email" id="email"   placeholder="ENTER EMAIL"  required/> 
+        <button id="submit"  type="submit-button" class="bt">SUBSCRIBE</button>
+    </div>
   <div class="footer-content">
       <div class="social-icons">
           <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -133,5 +146,8 @@
     <p>&copy; 2023 Wildlife in Sri Lanka. All rights reserved.</p>
   </div>
 </footer>
+<script src="JS/leopard.js" defer></script>
+<script src="newsletter.js"></script>
+<script src="JS/fetch.js"></script>
   </body>
 </html>

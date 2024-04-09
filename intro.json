@@ -1,0 +1,24 @@
+{
+    "Title_2": "intro",
+"sections_intro": [
+     {
+    "title": "Wildlife Locations in Sri Lanka",
+    "content": "Sri Lanka, nestled in the heart of the Indian Ocean, boasts a remarkable array of wildlife-rich locations that enchant nature enthusiasts and conservationists alike. Among these, the Sinharaja Forest Reserve, located in the Southern Province, stands out as a UNESCO World Heritage Site and a haven for biodiversity. This tropical rainforest, with its dense foliage and diverse ecosystems, is home to an extraordinary variety of flora and fauna, including numerous endemic species. Visitors to Sinharaja can immerse themselves in the vibrant symphony of tropical bird calls and marvel at the lush greenery that characterizes this unique natural sanctuary.Moving to the Central Province, Horton Plains National Park captivates with its sweeping landscapes and distinctive plateau ecosystem. Renowned for the awe-inspiring World's End precipice, the park also shelters diverse wildlife, such as sambar deer and elusive leopards. The plains offer not only breathtaking panoramic views but also the chance to encounter the fascinating fauna that calls this high-altitude habitat home. In the Central and Matale Districts, the Knuckles Mountain Range unfolds its wonders. A UNESCO World Heritage Conservation Area, the Knuckles Range is characterized by rugged terrain, cascading waterfalls, and a mosaic of ecosystems. The region is a treasure trove of biodiversity, hosting species like the purple-faced langur and a myriad of endemic birds. The Knuckles serve as a living testament to the ecological richness that defines Sri Lanka's interior. These wildlife locations underscore Sri Lanka's commitment to conservation, providing a glimpse into the nation's dedication to preserving its natural heritage. Each area presents a unique tapestry of life, contributing to the country's reputation as a biodiversity hotspot and a destination where the wonders of the wild come alive"
+        },
+    {
+      "content": [ {
+      "title": "Sinharaja Forest Reserve",
+      "content": "Known as a UNESCO World Heritage Site, Sinharaja is a tropical rainforest that harbors a rich diversity of flora and fauna. It is home to various endemic species and provides excellent opportunities for bird watching."
+                    },
+     {
+      "title": "Horton Plains National Park",
+      "content": "Famous for its stunning landscapes and the World's End precipice, Horton Plains is also home to sambar deer, leopards, and numerous bird species. The park offers breathtaking views and a unique plateau ecosystem."
+     },
+     {
+      "title": "Knuckles Mountain Range",
+      "content": "The Knuckles Range is a biodiversity hotspot with diverse ecosystems. It is known for its mountainous terrain, waterfalls, and a variety of wildlife, including the purple-faced langur and various species of endemic birds."
+      }
+     ]
+    }
+]
+}

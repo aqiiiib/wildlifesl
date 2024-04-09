@@ -1,152 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+ <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title id="page-title">Home</title>
     <link href="styles.css" rel="stylesheet" />
-<link rel="apple-touch-icon" sizes="180x180" href="Images/logo.png">
-<link rel="icon" type="image/png" sizes="32x32" href="Images/logo.png">
-<link rel="icon" type="image/png" sizes="16x16" href="Images/logo.png">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   </head>
-  <body>
-    <header>
-      <a href="index.html"><img src="Images/logo.png" class="logo"></a>
-      
-     <nav>
+ <body>
+    <header id="page-header">
+      <a href="index.html"><img src="Images/logo.png" class="logo" id="logo-image"></a>
+      <button class="menu-btn">&#9776;</button>
+      <script>document.querySelector('.menu-btn').addEventListener('click', () => {
+        document.querySelector('nav ul').classList.toggle('show');
+      });
+      </script>
+      <nav id="page-navigation" class="nav ul">
         <ul>
-         <li><a class="active" href="index.html">Home</a></li>
-         <li><a href="intro.html">Introduction</a></li>
-         <li><a href="conservation.html">Department</a></li>
-         <li> <a href="leopard.html">Leopard</a></li>
-        <li><a href="animals.html">Animals</a>
-         <ul class="dropdown">
-          <li><a href="yala.html">Yala National Park</a></li>
-          <li><a href="wilpattu.html">Wilpattu National Park</a></li>
-         </ul>
-        </li>
-      </ul>
+          <li><a class="active" href="index.html" >Home</a></li>
+          <li><a href="intro.html">Introduction</a></li>
+          <li><a href="conservation.html" >Department</a></li>
+          <li> <a href="leopard.html">Leopard</a></li>
+          <li><a href="animals.html">Animals</a>
+            <ul class="dropdown">
+              <li><a href="yala.html" >Yala National Park</a></li>
+              <li><a href="wilpattu.html">Wilpattu National Park</a></li>
+            </ul>
+          </li>
+          <li><a id="login" style= cursor:pointer></a><li>
+          <li><a id="editor" style= cursor:pointer></a></li>
+        </ul>
       </nav>
     </header>
 
-      <div class="image-container">
-        <img src="Images/eleph.jpg" alt="Image 1" class="image" />
-        <div class="overlay-text">Wild </div>
-        <div class="overlay-text1">Life </div>
-        <img src="Images/eleph1.png" alt="Image 2" class="image" />
-      </div>
-      <main>
-      <section>   
-      <p>
-        Across its many ecosystems, the wildlife of Sri Lanka, an island nation
-        in South Asia, is a fascinating tapestry. The country's tremendous
-        biodiversity is evidence of its dedication to protecting the natural
-        heritage, ranging from magnificent elephants to elusive leopards, lively
-        wildlife to underwater treasures. The intriguing fauna of Sri Lanka is
-        examined in this essay, together with the conservation initiatives put
-        in place to guarantee their survival. Sri Lanka's lush rainforests are
-        home to a plethora of plant species, many of which are native to the
-        region. The Sinharaja Forest Reserve, a UNESCO World Heritage Site,
-        exemplifies the country's dedication to protecting its unique flora and
-        fauna. Conservation efforts strive to protect these essential ecosystems
-        from challenges such as habitat loss and unsustainable practices.
-      </p>
-      <p class="p1">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+    <div class="image-container" id="image-container">
+      <img src="Images/eleph.jpg" alt="Image 1" class="image" id="image-eleph"/>
+      <div class="overlay-text" id="overlay-text-wild">Wild </div>
+      <div class="overlay-text1" id="overlay-text-life">Life </div>
+      <img src="Images/eleph1.png" alt="Image 2" class="image" id="image-eleph1"/>
+    </div>
+    <main id="page-main">
+      <section id="section-wildlife">   
+        <p id="wildlife-intro">
+          Across its many ecosystems, the wildlife of Sri Lanka, an island nation
+          in South Asia, is a fascinating tapestry. The country's tremendous
+          biodiversity is evidence of its dedication to protecting the natural
+          heritage, ranging from magnificent elephants to elusive leopards, lively
+          wildlife to underwater treasures. The intriguing fauna of Sri Lanka is
+          examined in this essay, together with the conservation initiatives put
+          in place to guarantee their survival. Sri Lanka's lush rainforests are
+          home to a plethora of plant species, many of which are native to the
+          region. The Sinharaja Forest Reserve, a UNESCO World Heritage Site,
+          exemplifies the country's dedication to protecting its unique flora and
+          fauna. Conservation efforts strive to protect these essential ecosystems
+          from challenges such as habitat loss and unsustainable practices.
+        </p>
+        <p class="p1" id="wildlife-separator">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
       </section>
     
-      <section>
-        <div class="content-container">
-          <h3>Giants of the Jungle</h3>
-          <img class="img2" src="Images/elephant1.jpg" alt="" />
-        <div class="expanded-details">
-          <p class="p2">
-            One of the most recognizable and revered representations of Sri
-            Lanka's wildlife is its elephant population. The largest of the
-            Asian elephant subspecies, the Sri Lankan elephant, inhabits Sri
-            Lanka, which has the highest density of elephants in the continent.
-          </p>
-          <p class="p2">
-            These magnificent animals serve as both a cultural icon and a vital
-            component of the nation's ecology.
-          </p>
-          <p class="p2">
-            Elephants in Sri Lanka roam freely in national parks and other
-            protected places, providing both residents and tourists with an
-            amazing spectacle. These gentle giants have appropriate habitats in
-            the open landscapes and rich foliage of these places, which enable
-            them to engage in activities like socializing, bathing, and
-            foraging.
-          </p>
-          <br />
-        </div>
-        </div>
-      </section>
-      <section>
-        <div class="content-container">
-          <h3>Apex Predators</h3>
-          <img class="img3" src="Images/leopard1.jpg" alt="" />
-          <div class="expanded-details">
-          <p class="p2">
-            The Sri Lankan leopard, an intriguing and secretive subspecies, has
-            a distinct position in Sri Lanka's rich wildlife tapestry. The Sri
-            Lankan leopard, as the largest Asian subspecies, contributes to the
-            ecological balance of the island's different ecosystems. However, as
-            an endangered species, it confronts significant hurdles, making
-            conservation efforts critical to its future.
-          </p>
-          <p class="p2">
-            These leopards, which are distinguished by rosettes and dark
-            markings on their golden coats, are essential to preserving the
-            integrity of Sri Lanka's ecosystems. As predators, they support the
-            general equilibrium of the food chain by controlling the populations
-            of prey species.
-          </p>
-          <p class="p2">
-            The Sri Lankan leopard is a symbol of the wild and untamed parts of
-            the nation's natural heritage because of its elusiveness, which
-            lends a sense of mystery to the surrounding area. The main goals of
-            conservation efforts are to safeguard the ecosystems that are vital
-            to these leopards, deal with conflicts between people and wildlife,
-            and increase public understanding of the value of conserving this
-            endangered species.
-          </p>
-          </div>
-        </div>
-        <div  class="content-container">
-          <img src="Images/peacock.jpg" alt="" class="sub-image"/>
-          <h3>Jewel of the Rainforest</h3>
-          <div  class="expanded-details">
-          <p class="p2">
-            Marvel at the vibrant colors of the Sri Lankan peacock, a symbol of
-            beauty and prosperity. Listen to their melodic calls and witness
-            their spectacular courtship displays.
-          </p>
+      <section id="section-giants">
+        <div class="content-container" id="content-giants">
+          <h3 id="giants-title"></h3>
+          <img class="img2" src="Images/elephant1.jpg" alt="" id="image-elephant1"/>
+          <div class="expanded-details" id="expanded-details-giants">
+            <p class="p2" id="giants-text">
+            </p>
+            <p class="p2" id="giants-text2">
+            </p>
+            <p class="p2" id="giants-text3">
+            </p>
+            <br />
           </div>
         </div>
       </section>
-      <ul>
-        <li>Explore diverse habitats from beaches to mountains.</li>
-        <li>Witness unique wildlife interactions and behaviors.</li>
-        <li>Support responsible tourism and conservation efforts.</li>
-      </ul>
-      <ol>
-        <li>Plan your safari adventure.</li>
-        <li>Pack essential gear for wildlife viewing.</li>
-        <li>Respect wildlife and their habitat.</li>
-      </ol>
+      <section id="section-apex">
+        <div class="content-container" id="content-apex">
+          <h3 id="apex-title"></h3>
+          <img class="img3" src="Images/leopard1.jpg" alt="" id="image-leopard1"/>
+          <div class="expanded-details" id="expanded-details-apex">
+            <p class="p3" id="apex-text"></p>
+            <p class="p3" id="apex-text2"></p>
+            <p class="p3" id="apex-text3"></p>
+          </div>
+        </div>
+        <div class="content-container" id="content-jewel">
+          <img src="Images/peacock.jpg" alt="" class="sub-image" id="image-peacock"/>
+          <h3 id="jewel-title"></h3>
+          <div class="expanded-details" id="expanded-details-jewel">
+            <p class="p4" id="jewel-text"></p>
+          </div>
+        </div>
+      </section>
+      <section id="section-adventure">
+        <ul id="adventure-list">
+          <li>Explore diverse habitats from beaches to mountains.</li>
+          <li>Witness unique wildlife interactions and behaviors.</li>
+          <li>Support responsible tourism and conservation efforts.</li>
+        </ul>
+        <ol id="adventure-order">
+          <li>Plan your safari adventure.</li>
+          <li>Pack essential gear for wildlife viewing.</li>
+          <li>Respect wildlife and their habitat.</li>
+        </ol>
+      </section>
     </main>
-      <footer>
-        <div class="footer-content">
-            <div class="social-icons">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        <div class="bottom-bar">
-          <p>&copy; 2023 Wildlife in Sri Lanka. All rights reserved.</p>
+    <footer>
+      <div class="news">
+        <h3 id="News">NewsLetter Subscription </h3>
+        <form action="#" method="post" id="subscribeForm">
+            <input type="email" id="email"   placeholder="ENTER EMAIL"  required/> 
+            <button id="submit"  type="submit-button" class="bt">SUBSCRIBE</button>
         </div>
-    </footer>
+      <div class="footer-content">
+          <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+      </div> 
+      <div class="bottom-bar">
+        <p>&copy; 2023 Wildlife in Sri Lanka. All rights reserved.</p>
+      </div>
+  </footer>
+    <script defer src="JS/index.js"></script>
+    <script src="newsletter.js"></script>
+    <script src="JS/fetch.js"></script>
   </body>
 </html>
