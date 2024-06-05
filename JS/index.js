@@ -54,7 +54,7 @@ function ADDCONTENT(value, id) {
     document.getElementById("login").insertAdjacentHTML("beforeend", loginUser);
  }
  else{
-   const  loginUser = `<li><a href="login.html">Login</a></li>`;
+   const  loginUser = `<li><a href="Login.html">Login</a></li>`;
    document.getElementById("login").insertAdjacentHTML("beforeend", loginUser);
 
  }
